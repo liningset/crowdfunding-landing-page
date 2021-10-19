@@ -1,6 +1,8 @@
 @import "./variables";
 @import "./header";
 @import "./heading";
+@import "./status";
+@import "./about";
 
 *{
     padding: 0;
@@ -20,7 +22,7 @@ body{
 
 main{
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;
     transform: translateY(-4rem);
     margin: 0 auto;
     display: flex;
@@ -60,5 +62,29 @@ button{
 
     &:hover{
         background: $dark-cyan;
+    }
+}
+
+
+
+
+
+@media (min-width: 600px){
+    main{
+        transform: translateY(-10rem);
+    }
+}
+
+@media (min-width: 800px){
+    main{
+        transform: translateY(-5rem);
+    }
+
+    section{
+        padding: 4rem 3rem;
+    }
+
+    .cta{
+        font-size: 1rem;
     }
 }

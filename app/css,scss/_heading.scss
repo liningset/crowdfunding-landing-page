@@ -26,16 +26,39 @@
             color: $dark-gray;
             display: flex;
             align-items: center;
-            background: $lighter-gray;
+            background: $lightest-gray;
+            transition: $transition;
 
             i{
                 padding: 1.25em;
                 border-radius: 5rem;
                 border: none;
                 background: $darker-gray;
-                color: $light-gray;
+                color: $lighter-gray;
 
             }
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 800px){
+    .heading-section{
+
+        .bookmark-text{
+            display: inline-block;
+            font-weight: 800;
+            margin: 0 1em;
+        }
+
+        .heading-section-buttons{
+            justify-content: space-between;
+            margin-top: 2em;
         }
     }
 }
