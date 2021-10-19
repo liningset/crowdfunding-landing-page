@@ -1,0 +1,64 @@
+@import "./variables";
+@import "./header";
+@import "./heading";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+body{
+    background: rgb(252, 252, 252);
+}
+
+
+main{
+    width: 80%;
+    max-width: 600px;
+    transform: translateY(-4rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    background: #fff;
+    border: 1px solid rgba(197, 197, 197, 0.5);
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+p{
+    color: $dark-gray;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+.cta{
+    background: $moderate-cyan;
+    font-size: 0.9rem;
+    padding: 1em 1.25em;
+    border: none;
+    transition: $transition;
+    border-radius: 5rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+
+    &:hover{
+        background: $dark-cyan;
+    }
+}

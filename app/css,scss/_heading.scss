@@ -1,0 +1,41 @@
+.heading-section{
+    position: relative;
+    padding-top: 4rem;
+
+    .logo-mastercraft{
+        position: absolute;
+        left: 50%;
+        top: -5vh;
+        transform: translateX(-50%);
+    }
+    .bookmark-text{
+        display: none;
+    }
+
+    .heading-section-buttons{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        .bookmark-btn{
+            border-radius: 5rem;
+            border: none;
+            font-size: 0.9rem;
+            color: $dark-gray;
+            display: flex;
+            align-items: center;
+            background: $lighter-gray;
+
+            i{
+                padding: 1.25em;
+                border-radius: 5rem;
+                border: none;
+                background: $darker-gray;
+                color: $light-gray;
+
+            }
+        }
+    }
+}
