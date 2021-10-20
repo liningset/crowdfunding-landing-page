@@ -19,7 +19,6 @@ header{
         display: flex;
         position: absolute;
         top: 0;
-        z-index: 1000000;
         justify-content: center;
         width: 100%;
     }
@@ -58,9 +57,13 @@ header{
         .mobile-hero-img{
             display: none;
         }
+
     }
 
+    
+
     .navbar{
+        padding: 2rem 0;
         .navlist{
             gap: 2em;
             .nav-item{

@@ -26,20 +26,41 @@
             color: $dark-gray;
             display: flex;
             align-items: center;
+            justify-content: center;
             background: $lightest-gray;
             transition: $transition;
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            overflow: hidden;
+            
+            
 
             i{
                 padding: 1.25em;
-                border-radius: 5rem;
+                border-radius: 50%;
                 border: none;
                 background: $darker-gray;
                 color: $lighter-gray;
-
+                //animation: book-mark 0.5s ease infinite 2s;
+                
             }
 
             &:hover{
                 opacity: 0.8;
+            }
+        }
+
+        .bookmarked{
+            color: $dark-cyan;
+            animation: book-mark 0.5s ease forwards;
+
+            i{
+                animation: book-mark 0.5s ease forwards;
+                background: $dark-cyan;
+                color: #fff;
+                display: inline-block;
+                position: relative;
             }
         }
     }
@@ -54,6 +75,14 @@
             display: inline-block;
             font-weight: 800;
             margin: 0 1em;
+        }
+
+        .heading-section-buttons{
+            .bookmark-btn{
+                width: auto;
+                border-radius: 5rem;
+                height: 3.25rem;
+            }
         }
 
         .heading-section-buttons{
